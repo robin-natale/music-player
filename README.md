@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# React music player
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is inspired from DevelopedByEd react app, used as training material to learn and have more exposure with React.
+
+The App init was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

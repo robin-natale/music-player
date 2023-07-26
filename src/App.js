@@ -1,4 +1,5 @@
 import React from "react";
+
 // Adding components
 import Player from "./components/Player";
 import Song from "./components/Song";

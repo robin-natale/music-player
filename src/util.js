@@ -7,7 +7,7 @@ function chillHop(){
             artist: "cocabona, Emperose",
             cover: "https://chillhop.com/wp-content/uploads/2023/05/1bcec532a76700819b9ca2853c175cdc54bccb02-1024x1024.jpg",
             id: uuidv4(),
-            active: false,
+            active: true,
             color: ["#FEF6C6", "#573C1E"],
             audio: "https://mp3.chillhop.com/serve.php/?mp3=55130"
         },

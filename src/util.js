@@ -28,6 +28,24 @@ function chillHop(){
             active: "false",
             color: ["#FCBC77","#392E28"],
             audio: "https://mp3.chillhop.com/serve.php/?mp3=55163"
+        },
+        {
+            name: "Grey",
+            artist: "Allem Iversom",
+            cover: "https://chillhop.com/wp-content/uploads/2020/07/75d809e774ef1f181bbfc258beb28addd45affc8-1024x1024.jpg",
+            id: uuidv4(),
+            active: "false",
+            color: ["#DF6E32","#807C71"],
+            audio: "https://mp3.chillhop.com/serve.php/?mp3=8307"
+        },
+        {
+            name: "Meadows",
+            artist: "Psalm Trees, Guillaume Muschalle",
+            cover: "https://chillhop.com/wp-content/uploads/2023/06/bb0db71fd74f15627e9912ad2278c13cee72ac2d-1024x1024.jpg",
+            id: uuidv4(),
+            active: "false",
+            color: ["#048484","#FCC99C"],
+            audio: "https://mp3.chillhop.com/serve.php/?mp3=7864"
         }
     ];
 }

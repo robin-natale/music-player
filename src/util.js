@@ -4,7 +4,7 @@ function chillHop(){
     return [
         {
             name: "Lost Woods",
-            artist: "cocabona, Emperose",
+            artist: "Cocabona, Emperose",
             cover: "https://chillhop.com/wp-content/uploads/2023/05/1bcec532a76700819b9ca2853c175cdc54bccb02-1024x1024.jpg",
             id: uuidv4(),
             active: true,

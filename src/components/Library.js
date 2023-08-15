@@ -11,3 +11,5 @@ const Library = () => {
         </div>
     )
 }
+
+export default Library;

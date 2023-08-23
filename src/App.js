@@ -34,8 +34,20 @@ function App() {
   return (
     <div className="App">
       <Song currentSong={currentSong} />
-      <Player isPlaying={isPlaying} setIsPlaying={setIsPlaying} currentSong={currentSong} audioRef={audioRef} setSongInfo={setSongInfo} songInfo={songInfo} />
-      <Library songs={songs} setCurrentSong={setCurrentSong} audioRef={audioRef} />
+      <Player
+        isPlaying={isPlaying}
+        setIsPlaying={setIsPlaying}
+        currentSong={currentSong}
+        audioRef={audioRef}
+        setSongInfo={setSongInfo}
+        songInfo={songInfo}
+      />
+      <Library
+        isPlaying={isPlaying}
+        songs={songs}
+        setCurrentSong={setCurrentSong}
+        audioRef={audioRef}
+      />
       <audio
         onTimeUpdate={timeUpdateHandler}
         onLoadedMetadata={timeUpdateHandler}

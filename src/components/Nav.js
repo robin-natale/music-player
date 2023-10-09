@@ -7,9 +7,11 @@ const Nav = () =>{
         <nav>
             <h1>Waves</h1>
             <button>
-                Library
+                <span>Library</span>
                 <FontAwesomeIcon icon={faMusic} />
             </button>
         </nav>
     )
 }
+
+export default Nav;

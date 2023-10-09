@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // Import the font awesome package
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Import specific icons

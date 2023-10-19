@@ -69,6 +69,11 @@ const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, s
       setCurrentSong(songs[(currentIndex - 1) % songs.length]);
     }
     playAudio(isPlaying, audioRef);
+  };
+
+  // Add the styles
+  const trackAnim = {
+    transform: `translateX(${songInfo.animationPercentage}%)`
   }
 
 
@@ -84,7 +89,7 @@ const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, s
             onChange={dragHandler}
             type="range"
           />
-          <div className="animate-track"></div>
+          <div style={trackAnim} className="animate-track"></div>
         </div>
         <p>{songInfo.duration ? getTime(songInfo.duration) : '0:00'}</p>
       </div>

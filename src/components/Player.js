@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 // Import the font awesome package
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Import specific icons
@@ -9,7 +9,27 @@ import {
   faPause,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, songInfo, songs, setCurrentSong }) => {
+const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, songInfo, songs, setCurrentSong, setSongs }) => {
+
+  // Use Effect
+  useEffect(() => {
+    // Add active state
+    const newSongs = songs.map((song) => {
+      if(song.id === currentSong.id){
+        return{
+          // keep everything the same, just change the state
+          ...song,
+          active: true,
+        };
+      } else {
+        return{
+          ...song,
+          active: false,
+        };
+      }
+    });
+    setSongs(newSongs);
+  }, [currentSong])
 
   // Event handlers
   const playSongHandler = () => {

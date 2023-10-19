@@ -75,13 +75,15 @@ const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, s
   const trackAnim = {
     transform: `translateX(${songInfo.animationPercentage}%)`
   }
-
+  const trackColor = {
+    background:`linear-gradient(to right, ${currentSong.color[0]}, ${currentSong.color[1]})`
+  }
 
   return (
     <div className="player">
       <div className="time-control">
         <p>{getTime(songInfo.currentTime)}</p>
-        <div className="track">
+        <div style={trackColor} className="track">
           <input
             min={0}
             max={songInfo.duration || 0 }

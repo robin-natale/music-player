@@ -1,8 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMusic } from "@fortawesome/free-solid-svg-icons";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import { 
+ faMusic,
+ faSun,
+ faMoon
+} from "@fortawesome/free-solid-svg-icons";
 
 const Nav = ({setLibraryStatus, libraryStatus, setDarkModeStatus, darkModeStatus}) =>{
     return(

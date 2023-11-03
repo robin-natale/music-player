@@ -10,8 +10,15 @@
     transform: translateX(-100%);
     transition: all 0.5s ease;
     opacity: 0;
-    h2{
+    .library__header{
         padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .library__button-close{
+        border: none;
+        background: transparent;
     }
 }
 

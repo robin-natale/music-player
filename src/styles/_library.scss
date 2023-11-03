@@ -15,7 +15,7 @@
     }
 }
 
-.library-song{
+.library__song{
     display: flex;
     align-items: center;
     padding: 1rem 2rem;
@@ -28,7 +28,7 @@
     }
 }
 
-.song-description{
+.song__description{
     padding-left: 1rem;
     h3{
         font-size: 1rem;
@@ -53,7 +53,7 @@
 .selected{
     background-color: rgb(247, 179, 149);
 }
-.active-library{
+.active__library{
     transform: translateX(0);
     opacity: 1;
 }

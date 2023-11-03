@@ -8,7 +8,7 @@
     justify-content: space-between;
 }
 
-.time-control{
+.time__control{
     width: 50%;
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@
     }
 }
 
-.play-control{
+.play_control{
     width: 30%;
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@ input[type="range"]{
     border-radius: 1rem;
     overflow: hidden;
 }
-.animate-track{
+.animate__track{
     background: rgb(204, 204, 204);
     width: 100%;
     height: 100%;

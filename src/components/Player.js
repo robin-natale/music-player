@@ -55,10 +55,10 @@ const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, s
 
   const skipTrackHandler = async (directions) => {
     let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
-    if (directions === 'skip-forward'){
+    if (directions === 'skip_forward'){
     await  setCurrentSong(songs[(currentIndex + 1) % songs.length]);
     } 
-    if (directions === 'skip-back'){
+    if (directions === 'skip_back'){
       if ((currentIndex - 1) % songs.length === -1){
         await setCurrentSong(songs[songs.length - 1]);
         if(isPlaying) audioRef.current.play();
@@ -80,7 +80,7 @@ const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, s
 
   return (
     <div className="player">
-      <div className="time-control">
+      <div className="time__control">
         <p>{getTime(songInfo.currentTime)}</p>
         <div style={trackColor} className="track">
           <input
@@ -90,14 +90,14 @@ const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, s
             onChange={dragHandler}
             type="range"
           />
-          <div style={trackAnim} className="animate-track"></div>
+          <div style={trackAnim} className="animate__track"></div>
         </div>
         <p>{songInfo.duration ? getTime(songInfo.duration) : '0:00'}</p>
       </div>
-      <div className="play-control">
+      <div className="play_control">
         <FontAwesomeIcon 
-        onClick={() => skipTrackHandler('skip-back')} 
-        className="skip-play" 
+        onClick={() => skipTrackHandler('skip_back')} 
+        className="skip_play" 
         size="2x" 
         icon={faAngleLeft} />
         <FontAwesomeIcon
@@ -107,8 +107,8 @@ const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, s
           icon={isPlaying ? faPause : faPlay }
         />
         <FontAwesomeIcon
-          onClick={() => skipTrackHandler('skip-forward')} 
-          className="skip-forward"
+          onClick={() => skipTrackHandler('skip_forward')} 
+          className="skip_forward"
           size="2x"
           icon={faAngleRight}
         />

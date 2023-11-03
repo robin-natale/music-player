@@ -11,7 +11,7 @@ nav{
         cursor: pointer;
         padding: 0.5rem;
         transition: all 0.3s ease;
-        &.button__library{
+        &.library__button-open{
             border: 2px solid rgb(65, 65, 65);
             &:hover{
                 background: rgb(65, 65, 65);

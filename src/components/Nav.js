@@ -15,7 +15,7 @@ const Nav = ({setLibraryStatus, libraryStatus, setDarkModeStatus, darkModeStatus
                     <FontAwesomeIcon icon={faSun} className={` ${darkModeStatus ? '' : 'hidden'}`} />
                     <FontAwesomeIcon icon={faMoon} className={` ${darkModeStatus ? 'hidden' : ''}`} />
             </button>
-            <button className="button__library" onClick={() => setLibraryStatus(!libraryStatus)}>
+            <button className="library__button-open" onClick={() => setLibraryStatus(!libraryStatus)}>
                 <span>Library</span>
                 <FontAwesomeIcon icon={faMusic} />
             </button>

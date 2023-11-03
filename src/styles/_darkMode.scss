@@ -1,0 +1,22 @@
+body .dark__mode{
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    h1, h2, h3{
+        color: rgb(255, 255, 255);
+    }
+    h3, h4{
+        color: rgb(195, 195, 195);
+    }
+    .library{
+        background-color: rgb(26, 26, 26);
+        .library-song.selected , .library-song:hover{
+            h3, h4{
+                color: rgb(26, 26, 26);
+            }
+        }
+    }
+    .button__library{
+        border-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+    }
+}

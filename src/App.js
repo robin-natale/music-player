@@ -1,4 +1,7 @@
-// TODO: Add Dark mode
+// TODO: Add Dark mode js
+// FIXME: Amend classes in bemmy style
+// TODO: P2 - Add accessibility
+// TODO: P2 - Add multiple libraries
 import React, { useRef, useState } from "react";
 
 // Import Styles

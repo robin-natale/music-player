@@ -1,6 +1,7 @@
-// TODO: Add Dark mode js
+// TODO: Organise nav button order
 // TODO: P2 - Add accessibility
 // TODO: P2 - Add multiple libraries
+// TODO: P2 - Add darkmode with transition
 import React, { useRef, useState } from "react";
 
 // Import Styles
@@ -26,6 +27,7 @@ function App() {
     animationPercentage: 0,
   });
   const [libraryStatus, setLibraryStatus] = useState(false);
+  const [darkModeStatus, setDarkModeStatus] = useState(false);
 
   // Ref
   const audioRef = useRef(null);
@@ -50,11 +52,14 @@ function App() {
     }
   };
 
+  // console.log('dark:' + setLibraryStatus);
   return (
-    <div className="app dark__mode">
+    <div className={`app ${darkModeStatus ? 'dark__mode' : ''}`}>
       <Nav 
       libraryStatus={libraryStatus} 
-      setLibraryStatus={setLibraryStatus} />
+      setLibraryStatus={setLibraryStatus} 
+      darkModeStatus={darkModeStatus} 
+      setDarkModeStatus={setDarkModeStatus} />
       <Song 
       currentSong={currentSong} />
       <Player

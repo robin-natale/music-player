@@ -1,18 +1,21 @@
 nav{
     min-height: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    max-width: 80%;
+    margin: auto;
     button{
         display: flex;
         gap: 0.3rem;
         background: transparent;
         border: none;
         cursor: pointer;
-        padding: 0.5rem;
+        padding: 0.6rem;
         transition: all 0.3s ease;
-        &.library__button-open{
+        &.library__button-open,  &.dark__mode-toggle{
             border: 2px solid rgb(65, 65, 65);
+            border-radius: 35px;
             &:hover{
                 background: rgb(65, 65, 65);
                 color: white;

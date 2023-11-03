@@ -9,15 +9,15 @@ import {
 const Nav = ({setLibraryStatus, libraryStatus, setDarkModeStatus, darkModeStatus}) =>{
     return(
         <nav>
+            <button className="library__button-open" onClick={() => setLibraryStatus(!libraryStatus)}>
+                <span>Library</span>
+                <FontAwesomeIcon icon={faMusic} />
+            </button>
             {/* TODO: Add new name or logo */}
             <h1>Waves</h1>
             <button className="dark__mode-toggle" onClick={() => setDarkModeStatus(!darkModeStatus)}>
                     <FontAwesomeIcon icon={faSun} className={` ${darkModeStatus ? '' : 'hidden'}`} />
                     <FontAwesomeIcon icon={faMoon} className={` ${darkModeStatus ? 'hidden' : ''}`} />
-            </button>
-            <button className="library__button-open" onClick={() => setLibraryStatus(!libraryStatus)}>
-                <span>Library</span>
-                <FontAwesomeIcon icon={faMusic} />
             </button>
         </nav>
     )

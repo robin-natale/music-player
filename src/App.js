@@ -49,7 +49,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app dark__mode">
       <Nav 
       libraryStatus={libraryStatus} 
       setLibraryStatus={setLibraryStatus} />

@@ -54,7 +54,7 @@ function App() {
 
   // console.log('dark:' + setLibraryStatus);
   return (
-    <div className={`app ${darkModeStatus ? 'dark__mode' : ''}`}>
+    <div className={`app${darkModeStatus ? ' dark__mode' : ''}${libraryStatus ? ' library__open' : ''}`}>
       <Nav 
       libraryStatus={libraryStatus} 
       setLibraryStatus={setLibraryStatus} 

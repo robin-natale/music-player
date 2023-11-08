@@ -62,3 +62,11 @@ input[type="range"]{
     transform: translateX(0%);
     pointer-events: none;
 }
+@media screen and (max-width:768px) {
+    .time__control{
+        width: 90%;
+    }
+    .play_control{
+        width: 60%;
+    }
+}

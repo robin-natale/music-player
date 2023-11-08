@@ -19,6 +19,12 @@ h3, h4{
 .hidden{
     display: none;
 }
+.app {
+    transition: all 0.5s ease;
+}
+.library__open {
+    margin-left: 20rem;
+}
 @import "./darkMode";
 @import "./song";
 @import "./player"; 

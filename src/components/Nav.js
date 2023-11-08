@@ -14,7 +14,7 @@ const Nav = ({setLibraryStatus, libraryStatus, setDarkModeStatus, darkModeStatus
                 <FontAwesomeIcon icon={faMusic} />
             </button>
             {/* TODO: Add new name or logo */}
-            <h1>Waves</h1>
+            <h1 class="hidden">Waves</h1>
             <button className="dark__mode-toggle" onClick={() => setDarkModeStatus(!darkModeStatus)}>
                     <FontAwesomeIcon icon={faSun} className={` ${darkModeStatus ? '' : 'hidden'}`} />
                     <FontAwesomeIcon icon={faMoon} className={` ${darkModeStatus ? 'hidden' : ''}`} />

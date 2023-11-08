@@ -20,6 +20,10 @@
         border: none;
         background: transparent;
         cursor: pointer;
+        .svg-inline--fa{
+            width: 1.2rem;
+            height: 1.2rem;
+        }
     }
 }
 
@@ -64,4 +68,10 @@
 .active__library{
     transform: translateX(0);
     opacity: 1;
+}
+
+@media screen and (max-width:768px) {
+    .library{
+        width: 100%;
+    }
 }

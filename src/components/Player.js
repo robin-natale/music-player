@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 // Import the font awesome package
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Import specific icons
@@ -11,11 +11,9 @@ import {
 
 const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, songInfo, songs, setCurrentSong, setSongs }) => {
 
-  // Use Effect
-  useEffect(() => {
-    // Add active state
+  const activeLibraryHandler = ( nextPrev ) => {
     const newSongs = songs.map((song) => {
-      if(song.id === currentSong.id){
+      if(song.id === nextPrev.id){
         return{
           // keep everything the same, just change the state
           ...song,
@@ -29,8 +27,7 @@ const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, s
       }
     });
     setSongs(newSongs);
-  }, [currentSong])
-
+  }
   // Event handlers
   const playSongHandler = () => {
     if (isPlaying) {
@@ -56,16 +53,19 @@ const Player = ({ currentSong, isPlaying, setIsPlaying, audioRef, setSongInfo, s
   const skipTrackHandler = async (directions) => {
     let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
     if (directions === 'skip_forward'){
-    await  setCurrentSong(songs[(currentIndex + 1) % songs.length]);
+      await setCurrentSong(songs[(currentIndex + 1) % songs.length]);
+      activeLibraryHandler(songs[(currentIndex + 1) % songs.length]);
     } 
     if (directions === 'skip_back'){
       if ((currentIndex - 1) % songs.length === -1){
         await setCurrentSong(songs[songs.length - 1]);
+        activeLibraryHandler(songs[songs.length - 1]);
         if(isPlaying) audioRef.current.play();
         // we add return so when this piece of code is run the one below does not
         return;
       }
       await setCurrentSong(songs[(currentIndex - 1) % songs.length]);
+      activeLibraryHandler(songs[(currentIndex - 1) % songs.length]);
     }
     if(isPlaying) audioRef.current.play();
   };

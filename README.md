@@ -1,8 +1,6 @@
 # React music player
 
-This project is inspired from DevelopedByEd react app, used as training material to learn and have more exposure with React.
-
-The App init was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React music player application built with reusable components, state management, and custom audio controls to deliver a seamless music playback experience.
 
 ## Available Scripts
 

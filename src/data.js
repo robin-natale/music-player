@@ -5,92 +5,92 @@ function chillHop(){
         {
             name: "Waiting",
             artist: "Kevin Kuh",
-            cover: "https://i.scdn.co/image/ab67616d0000b273db3e6023f3b739c706fbf722",
+            cover: "https://picsum.photos/seed/waiting/500",
             id: uuidv4(),
             active: true,
-            color: ["#7D8FAB", "#FAA96E"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=23173"
+            color: ["#6e5f4a", "#957b6b"],
+            audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
         },
         {
             name: "Lost Woods",
             artist: "Cocabona, Emperose",
-            cover: "https://chillhop.com/wp-content/uploads/2023/05/1bcec532a76700819b9ca2853c175cdc54bccb02-1024x1024.jpg",
+            cover: "https://picsum.photos/seed/lost-woods/500",
             id: uuidv4(),
             active: false,
-            color: ["#FEF6C6", "#573C1E"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=55130"
+            color: ["#905b38", "#bdccde"],
+            audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
         },
         {
             name: "Awake",
             artist: "Allem Iversom",
-            cover: "https://chillhop.com/wp-content/uploads/2020/07/c85a5f6166a48001820ba3dc7e1da639281e00b3-1024x1024.jpg",
+            cover: "https://picsum.photos/seed/awake/500",
             id: uuidv4(),
             active: false,
-            color: ["#FF400B","#799398"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=8891"
+            color: ["#373422", "#1b7182"],
+            audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
         },
         {
             name: "Nights in West",
             artist: "Ajmw",
-            cover: "https://chillhop.com/wp-content/uploads/2023/06/5c2d5b05dfc98afb5ed850ca918f732445b8ca1e-1024x1024.jpg",
+            cover: "https://picsum.photos/seed/dawnvalley/500",
             id: uuidv4(),
             active: false,
-            color: ["#DD8D96","#7DCBB3"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=8723"
+            color: ["#353728", "#505851"],
+            audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
         },
         {
             name: "I Wish It Were (You)",
             artist: "Middle School, Taro",
-            cover: "https://chillhop.com/wp-content/uploads/2020/07/1b7f6e07967bf16feaa5628d843466d01a2141fe-1024x1024.jpg",
+            cover: "https://picsum.photos/seed/softmeadow/500",
             id: uuidv4(),
             active: false,
-            color: ["#F93E38","#F09E1D"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=7895"
+            color: ["#424a55", "#79909e"],
+            audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
         },
         {
             name: "Reflection",
             artist: "Swørn",
-            cover: "https://i.scdn.co/image/ab67616d0000b2739f0f86b54e7ca8870fac0ede",
+            cover: "https://picsum.photos/seed/reflection/500",
             id: uuidv4(),
             active: false,
-            color: ["#B5679B","#521244"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=9228"
+            color: ["#626262", "#8a8a8a"],
+            audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
         },
         {
             name: "It's Okay",
             artist: "Yasper",
-            cover: "https://chillhop.com/wp-content/uploads/2023/05/5683fa8ae05221c0d06eeedd90fe00e653d27c48-1024x1024.jpg",
+            cover: "https://picsum.photos/seed/its-okay/500",
             id: uuidv4(),
             active: false,
-            color: ["#FCBC77","#392E28"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=55163"
+            color: ["#414648", "#6c7270"],
+            audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"
         },
         {
             name: "Grey",
             artist: "Allem Iversom",
-            cover: "https://chillhop.com/wp-content/uploads/2020/07/75d809e774ef1f181bbfc258beb28addd45affc8-1024x1024.jpg",
+            cover: "https://picsum.photos/seed/grey/500",
             id: uuidv4(),
             active: false,
-            color: ["#DF6E32","#807C71"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=8307"
+            color: ["#628b91", "#8ca4b0"],
+            audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
         },
         {
             name: "Meadows",
             artist: "Psalm Trees, Guillaume Muschalle",
-            cover: "https://chillhop.com/wp-content/uploads/2023/06/bb0db71fd74f15627e9912ad2278c13cee72ac2d-1024x1024.jpg",
+            cover: "https://picsum.photos/seed/meadows/500",
             id: uuidv4(),
             active: false,
-            color: ["#048484","#FCC99C"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=7864"
+            color: ["#50504a", "#b7b7b7"],
+            audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
         },
         {
             name: "Sorry",
             artist: "Swørn",
-            cover: "https://i.scdn.co/image/a107c2856862918d8da5249f77ec83bec388d4cf",
+            cover: "https://picsum.photos/seed/quietlake/500",
             id: uuidv4(),
             active: false,
-            color: ["#ABABC9","#E7B853"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=8305"
+            color: ["#416478", "#c3cecd"],
+            audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3"
         }
     ];
 }

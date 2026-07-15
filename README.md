@@ -2,6 +2,8 @@
 
 A React music player application built with reusable components, state management, and custom audio controls to deliver a seamless music playback experience.
 
+**Live demo:** [robin-natale.github.io/music-player](https://robin-natale.github.io/music-player)
+
 ## Available Scripts
 
 In the project directory, you can run:
